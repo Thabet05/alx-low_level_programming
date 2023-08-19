@@ -2,7 +2,7 @@
 /**
  * main - program that prints a line followed by
  * a new one Using the function puts
- * return : 0 (success)
+ * Return: 0 (Success)
  */
 int  main(void)
 {
