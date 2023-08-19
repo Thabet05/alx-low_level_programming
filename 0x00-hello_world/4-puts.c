@@ -1,7 +1,8 @@
 #include <stdio.h>
-/*
- * main - program that prints a line program that prints Using the function puts 
- * the program should return 0
+/**
+ * main - program that prints a line followed by
+ * a new one Using the function puts
+ * the program should return (0)
  */
 int  main(void)
 {
