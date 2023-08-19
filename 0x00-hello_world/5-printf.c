@@ -1,6 +1,6 @@
 #include <stdio.h>
 /***
- * main - a  program that prints a line followed
+ * Main: a  program that prints a line followed
  * by a new line  using print f
  * Return: 0 (Success)
  */
