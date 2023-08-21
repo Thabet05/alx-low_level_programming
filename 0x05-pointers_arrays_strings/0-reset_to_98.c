@@ -1,13 +1,10 @@
 #include <stdio.h>
-void reset_to_98(int *);
 /*
- * main - a function that takes a pointer to an int
- * as parameter and updates the value it points to to 98
- * Return: 0 (Success)
+ * reset_to_98 - a function that takes a pointer to an int
+ * a as parameter and updates the value it points to to 98
+ * Return: n (Success)
  */
-int main(void){
-	int n;
-	int *p=&n;
-	*p=98;
-	return(0);
+void reset_to_98(int *n)
+{
+	*n=98;
 }
