@@ -4,7 +4,7 @@
  * @s: src string
  * @b: dis charecter
  * @n: number of bytes
- * Return: pointer to s
+ * Return: pointer to s string
  */
 char *_memset(char *s, char b, unsigned int n)
 {
