@@ -8,14 +8,14 @@
  */
 void print_diagsums(int *a, int size);
 {
-	int i, e = 0, f = 0;
+	int i, s1 = 0, s2 = 0;
 
 	for (i = 0; i < size; i++)
 	{
-		e += a[i];
-		f += a[size - i - 1];
+		s1 += a[i];
+		s2 += a[size - i - 1];
 		a += size;
 	}
-	printf("%d, ", e);
-	printf("%d\n", f);
+	printf("%d, ", s1);
+	printf("%d\n", s2);
 }
