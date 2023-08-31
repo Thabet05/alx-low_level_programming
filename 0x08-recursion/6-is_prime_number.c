@@ -13,7 +13,7 @@ int is_prime_number(int n)
 		return (1);
 	if (n % 2 == 0)
 		return (0);
-	return prime_numbers(n, 3)
+	return (prime_numbers(n, 3));
 }
 /**
  * prime_numbers - secondary function
