@@ -2,7 +2,6 @@
 /**
  * main - entry point
  * prints _putchar, followed by a new line
- * @c: the input string
  * Return: 0
  */
 int main(void)
