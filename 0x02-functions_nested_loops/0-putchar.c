@@ -5,7 +5,7 @@
  * @c: the input string
  * Return: 0
  */
-int main(char c)
+int main(void)
 {
 	char c[]="_putchar";
 
