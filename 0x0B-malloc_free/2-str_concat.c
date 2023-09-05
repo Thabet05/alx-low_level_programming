@@ -20,13 +20,13 @@ char *str_concat(char *s1, char *s2)
 		l1++;
 	while (s2[l2] != '\0')
 		l2++;
-	l2++;
 	p = malloc(sizeof(char) * (l1 + l2));
 	if (p == 0)
 		return (NULL);
 	for (ind1 = 0; ind1 <= l1; ind1++)
 		p[ind1] = s1[ind1];
-	for (ind2 = 0; ind2 <= l2; ind2++, ind1++)
-		p[ind1] = s2[ind2];
+	for (ind2 = 0; ind2 <= l2; ind2++)
+		p[ind1+ind2] = s2[ind2];
+	p[ind1+ind2] = '\0'
 	return (p);
 }
