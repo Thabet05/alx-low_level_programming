@@ -22,12 +22,16 @@ int **alloc_grid(int width, int height)
 		if (point[h] == 0)
 		{
 			for (w = 0; w < h; w++)
+			{
 				free(point[w]);
+			}
 			free(point);
 			return (0);
 		}
 		for (w = 0; w < width; w++)
+		{
 			point[h][w] = 0;
+		}
 	}
 	return (point);
 }
