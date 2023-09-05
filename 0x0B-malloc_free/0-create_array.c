@@ -15,7 +15,7 @@ char *create_array(unsigned int size, char c)
 	if (size == 0 || q == 0)
 		return (0);
 	for (index = 0; index < size; index++)
-		q[index] = T;
+		q[index] = c;
 
 	return (q);
 }
