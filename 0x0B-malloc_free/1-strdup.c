@@ -13,7 +13,7 @@ char *_strdup(char *str)
 
 	if (str == 0 || p == 0)
 		return (0);
-	for (index = 0; index < strlen(str) + 1; index++)
+	for (index = 0; index < strlen(str); index++)
 	{
 		p[index] = str[index];
 	}
