@@ -19,7 +19,7 @@ char *str_concat(char *s1, char *s2)
 	char *p;
 	p = malloc(sizeof(char) * (l1 + l2));
 	if p == 0
-		return (0);
+		return NULL;
 	for (ind1 = 0; ind1 <= l1; ind1)
 		p[ind1] = s1[ind1];
 	for (ind2 = 0; ind2 <= l2; ind2++, ind1++)
