@@ -9,12 +9,11 @@
 char *_strdup(char *str)
 {
 	char *p = malloc(sizeof(char) * (strlen(str) + 1));
+	size_t index;
 
 	if (str == 0 || p == 0)
 		return (0);
-	int index;
-
-	for (index = 0; index < strlen(str) + 1; index++)
+	for (index = 0; size_t index < strlen(str) + 1; index++)
 	{
 		p[index] = str[index];
 	}
