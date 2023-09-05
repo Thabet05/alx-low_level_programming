@@ -4,12 +4,12 @@
  * created by your alloc_grid function
  * @height: the input height of the matrix
  * @grid: the input matrix
- * Return: 0
+ * Return: success
  */
 void free_grid(int **grid, int height)
 {
 	int index;
-	
+
 	for (index = 0; index < height; index++)
 	{
 		free(grid[index]);
