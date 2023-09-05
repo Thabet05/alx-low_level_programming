@@ -8,4 +8,14 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	if (size == 0)
+	char *q = malloc(sizeof(char) * size);
+
+	int index;
+
+	if (size == 0 || q == 0)
+		return (0);
+	else
+		for (index = 0; index < size; index++)
+			p[index] = T;
+	return (q);
+}
