@@ -28,10 +28,14 @@ int **alloc_grid(int width, int height)
 			free(point);
 			return (0);
 		}
+	}
+	for (h = 0; h < height; h++)
+	{
 		for (w = 0; w < width; w++)
 		{
 			point[h][w] = 0;
 		}
+	}
 	}
 	return (point);
 }
