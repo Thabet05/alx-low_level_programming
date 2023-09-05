@@ -1,17 +1,18 @@
-nclude "main.h"
+#include "main.h"
 /**
- *  * free_grid - frees a mattrix grid
- *   * @height: height of the matrix
- *    * @grid: input matrix
- *     * Return: nothing
- *      */
+ * free_grid - a function that frees a 2 dimensional grid previously
+ * created by your alloc_grid function
+ * @height: the input height of the matrix
+ * @grid: the input matrix
+ * Return: 0
+ */
 void free_grid(int **grid, int height)
 {
-		int i;
-
-			for (i = 0; i < height; i++)
-					{
-								free(grid[i]);
-									}
-f		jjjj	free(grid);
+	int index;
+	
+	for (index = 0; index < height; index++)
+	{
+		free(grid[index]);
+	}
+	free(grid);
 }
