@@ -10,6 +10,9 @@ char *_strdup(char *str)
 {
 	size_t j = strlen(str);
 	char *p = malloc(sizeof(char) * (j + 1));
+
+	if (j > 130)
+		return NULL;
 	size_t index;
 
 	if (str == 0 || p == 0)
