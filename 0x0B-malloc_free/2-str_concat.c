@@ -27,6 +27,6 @@ char *str_concat(char *s1, char *s2)
 		p[ind1] = s1[ind1];
 	for (ind2 = 0; ind2 <= l2; ind2++)
 		p[ind1+ind2] = s2[ind2];
-	p[ind1+ind2] = '\0'
+	p[ind1+ind2] = '\0';
 	return (p);
 }
