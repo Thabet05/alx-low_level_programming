@@ -36,6 +36,5 @@ int **alloc_grid(int width, int height)
 			point[h][w] = 0;
 		}
 	}
-	}
 	return (point);
 }
