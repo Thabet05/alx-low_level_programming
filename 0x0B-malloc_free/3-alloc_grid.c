@@ -18,12 +18,12 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	if (height <= 0)
 		return (NULL);
-	if (p == 0)
+	if (point == 0)
 		return (NULL);
 	for (h = 0; h < height; h++)
 	{
 		for (w = 0; w < width; w++)
-			p[h][w] = 0;
+			point[h][w] = 0;
 	}
-	return (p);
+	return (point);
 }
