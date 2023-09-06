@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * main - a program that prints the addition of 2 numbers
  * @argc: the size of the array argv
