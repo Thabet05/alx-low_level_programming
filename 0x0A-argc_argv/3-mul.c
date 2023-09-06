@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[2]);
-	if (argc != 3 || (num1 < 0 && num2 > 9) || (num2 < 0 && num1 > 9))
+	if (argc != 3)
 	{
 		printf("error\n");
 		return (1);
