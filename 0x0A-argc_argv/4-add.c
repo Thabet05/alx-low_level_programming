@@ -4,7 +4,7 @@
  * main - a program that prints the addition of 2 numbers
  * @argc: the size of the array argv
  * @argv: the array
- * Return: 0 or 1
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
