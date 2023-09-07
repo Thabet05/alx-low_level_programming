@@ -2,7 +2,7 @@
 /**
  * malloc_checked - function that allocates memory using malloc
  * @b: the input integer
- * Return: pointer or cause normal process termination
+ * Return: pointer or 98
  */
 void *malloc_checked(unsigned int b)
 {
