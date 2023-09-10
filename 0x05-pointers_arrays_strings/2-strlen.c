@@ -6,6 +6,7 @@
  */
 int _strlen(char *s)
 {
+<<<<<<< HEAD
 	int i = 0;
 
 	while (*s != '\0')
@@ -14,4 +15,15 @@ int _strlen(char *s)
 		s++;
 	}
 	return (i);
+=======
+	int i =0;
+
+	while(*s != '\0')
+        {
+                i++;
+                s++;
+        }
+
+        return(i);
+>>>>>>> 95645f554586e762f451f45d4b502399cb6f0ccd
 }
