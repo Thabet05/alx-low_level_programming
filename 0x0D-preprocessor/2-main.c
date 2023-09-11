@@ -6,11 +6,11 @@
  */
 int main(void)
 {
-	char* filename = __FILE__;
+	char* name = __FILE__;
 
-	for (int i = 0; filename[i] != '\0'; i++)
+	for (int i = 0; name[i] != '\0'; i++)
 	{
-		_putchar(filename[i]);
+		_putchar(name[i]);
 	}
 	_putchar('\n');
 	return 0;
