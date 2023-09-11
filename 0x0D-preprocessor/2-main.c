@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - program that prints the name of the file
+ * main: prints the name of the file
  * Return: 0
  */
 int main(void)
