@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+#include <stdio.h>
+/**
+ * struct dog - a dog struct
+ * @name: dog's name
+ * @age: dog's age
+ * @owner: owner's name
+ */
+struct dog
+=======
 #ifndef DOG_H
 #define DOG_H
 /**
@@ -7,6 +17,7 @@
  * @owner: the owner of the dog
  */
 typedef struct dog
+>>>>>>> b9cd24e6346c2cb6411bd16b7ee24d8b9d88d28b
 {
 	char *name;
 	float age;

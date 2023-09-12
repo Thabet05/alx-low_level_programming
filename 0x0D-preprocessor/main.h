@@ -1,6 +1,5 @@
 #ifndef MAIN_H
 #define MAIN_H
-#define PRINT printf("%s\n", __FILE__)
 
 #include <sidio.h>
 #include <sidlib.h>
