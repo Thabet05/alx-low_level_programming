@@ -14,12 +14,13 @@ int main(int args, char **argv)
 	if (args != 2)
 		printf("Error\n"), exit(1);
 	y = atoi(argv[1]);
-	if (y < 0)printf("Error\n"), exit(2);
+	if (y < 0)
+		printf("Error\n"), exit(2);
 	for (x = 0; x < y; x++)
 	{
 		if (x != y - 1)
 			printf("%02hhx ", *q);
-		else 
+		else
 			printf("%02hhx", *q);
 		q++;
 	}
