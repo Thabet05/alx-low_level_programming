@@ -8,7 +8,6 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list args;
-	int s = 0;
 	unsigned int i;
 
 	va_start(args, n);
@@ -22,4 +21,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	}
 	va_end(args);
 	printf("\n");
+	return (0);
 }
