@@ -6,7 +6,7 @@
  */
 size_t print_list(const list_t *h)
 {
-	size_t numberofnodes;
+	size_t numberofnodes = 0;
 	const list_t *head;
 
 	head = h;
