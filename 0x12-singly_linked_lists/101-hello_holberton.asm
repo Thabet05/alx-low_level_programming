@@ -1,7 +1,7 @@
 section		.text
 	extern	printf
-	global	start
-start:
+	global	main
+main:
 	mov	edi, msg
 	mov	eax, 0
 	call	printf
