@@ -19,17 +19,18 @@ int create_file(const char *filename, char *text_content)
 		{
 			return (-1);
 		}
-		if (text_content == 0)
-		{
-			close(option);
-			return (1);
-		}
-		option = write(option, text_content, strlen(text_content));
-		if (option == -1)
-		{
-			close(option);
-			return (-1);
-		}
+	}
+	if (text_content == 0)
+	{
 		close(option);
 		return (1);
+	}
+	option = write(option, text_content, strlen(text_content));
+	if (option == -1)
+	{
+		close(option);
+		return (-1);
+	}
+	close(option);
+	return (1);
 }
