@@ -19,8 +19,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	content = malloc(sizeof(char) * letters);
 	if (content == 0)
 	{
-		close (FD);
-		free (content);
+		close(FD);
+		free(content);
 		return (0);
 	}
 	option = read(FD, &content[0], letters);
