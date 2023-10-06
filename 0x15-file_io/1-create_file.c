@@ -7,7 +7,7 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-        ssize_t option = 0;
+	ssize_t option = 0;
 
 	if (filename == 0)
 		return (-1);
@@ -24,12 +24,12 @@ int append_text_to_file(const char *filename, char *text_content)
 			close(option);
 			return (1);
 		}
-		option = write (option, text_content, strlen(text_content));
+		option = write(option, text_content, strlen(text_content));
 		if (option == -1)
-                {
+		{
 			close(option);
-                        return (-1);
-                }
+			return (-1);
+		}
 		close(option);
 		return (1);
 }
