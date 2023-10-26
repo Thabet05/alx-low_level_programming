@@ -11,13 +11,14 @@ unsigned int binary_to_uint(const char *b)
 
 	if (b == 0)
 		return (0);
-	for (index1; index1 <= strlen(b); index1++)
+	while (b[index1] != 0)
 	{
 		decimal <<= 1;
 		if (b[index1] == '1')
 			decimal++;
 		else if (b[index1] != '0')
 			return (0);
+		index1++;
 	}
 	return (decimal);
 }
