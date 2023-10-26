@@ -1,6 +1,27 @@
-#include <main.h>
+#include "main.h"
 /**
- * binary_to_uint - a function that converts a binary number to an unsigned int
- * @b: pointer to a string of 0 and 1 chars
- * Return: the converted number, or 0
+ * binary_to_uint - a function prints the binary representation of a number
+ * @n: the input number
+ * Return: the binary number
  */
+void print_binary(unsigned long int n)
+{
+	unsigned long int b = 1;
+
+	if (n == 0)
+	{
+		printf("0");
+		return;
+	}
+	b <<= ((sizeof(unsigned long int) * 8) - 1);
+	while ((n & b) == 0)
+		b >>= 1;
+	while (b > 0)
+	{
+		if (n & b)
+			printf("1");
+		else
+			printf("0");
+		b >>= 1;
+	}
+}
