@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * binary_to_uint - a function prints the binary representation of a number
+ * print_binary - a function prints the binary representation of a number
  * @n: the input number
  * Return: the binary number
  */
