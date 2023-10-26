@@ -30,6 +30,6 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	if (n == m || (m == 0 && n == 0))
 		return (0);
 	k = n ^ m;
-	ind = count_ones(k);
+	ind = counting_ones(k);
 	return (ind);
 }
