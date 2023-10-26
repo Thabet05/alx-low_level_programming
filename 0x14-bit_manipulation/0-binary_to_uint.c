@@ -6,22 +6,18 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int index1 = 0;
-	int index2 = 0;
-	int decimal = 0;
+	unsigned int index1 = 0;
+	unsigned int decimal = 0;
 
 	if (b == 0)
 		return (0);
 	for (index1; index1 <= strlen(b); index1++)
 	{
-		if (b[index1] != 0 | b[index1] != 1)
-			return (0);
-	}
-	for (index2; index2 <= strlen(b); index2++)
-	{
 		decimal <<= 1;
-		if (b[index2] == '1')
+		if (b[index1] == '1')
 			decimal++;
+		else if (b[index1] != '0')
+			return (0);
 	}
 	return (decimal);
 }
