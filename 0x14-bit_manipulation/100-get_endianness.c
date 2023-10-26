@@ -1,6 +1,15 @@
-#include <main.h>
+#include "main.h"
 /**
- * binary_to_uint - a function that converts a binary number to an unsigned int
- * @b: pointer to a string of 0 and 1 chars
- * Return: the converted number, or 0
+ * get_endianness - checks the endianness
+ * Return: 1 if little endian 0 if big endian
  */
+int get_endianness(void)
+{
+	int index = 1;
+
+	index >>= 1;
+	if (!index)
+		return (1);
+	else
+		return (0);
+}
