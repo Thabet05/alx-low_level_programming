@@ -19,7 +19,9 @@ unsigned int binary_to_uint(const char *b)
 	}
 	for (index2; index2 <= strlen(b); index2++)
 	{
-		 decimal += b[index2] * pow(2, index2);
+		decimal <<= 1;
+		if (b[index2] == '1')
+			decimal++;
 	}
 	return (decimal);
 }
