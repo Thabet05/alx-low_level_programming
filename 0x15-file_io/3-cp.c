@@ -1,6 +1,9 @@
 #include "main.h"
 /**
- *
+ * main - a function that copies the content of a file to another file
+ * @argc: number of arguments
+ * @argv: the argument
+ * Return: 0
  */
 int main (int argc, char **argv)
 {
@@ -29,13 +32,13 @@ int main (int argc, char **argv)
 		if (option == -1)
 		{
 			exit(99);
-			dprintf(STDOUT_FILENO, "Error: Can't write to\n");
+			dprintf(STDOUT_FILENO, "Error: Can't write to %s\n", argv[2]);
 		}
 		option = write(fd, content, nmbrbytes);
 		if (option == -1)
 		{
 			exit(99);
-			dprintf(STDOUT_FILENO, "Error: Can't write to\n");
+			dprintf(STDOUT_FILENO, "Error: Can't write to %s\n", argv[2]);
 		}
 	}
 	option = close(fd);
