@@ -41,7 +41,7 @@ int main (int argc, char **argv)
 			exit(99);
 			dprintf(STDOUT_FILENO, "Error: Can't write to %s\n", argv[2]);
 		}
-		option = write(fd, fd1, buffer);
+		option = write(fd, buffer, fd1);
 		if (option == -1)
 		{
 			exit(99);
