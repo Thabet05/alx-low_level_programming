@@ -8,6 +8,7 @@
 int main (int argc, char **argv)
 {
 	ssize_t option, fd, fd1;
+	char *buffer;
 
 	if(argc != 3)
 		{
@@ -26,7 +27,7 @@ int main (int argc, char **argv)
 		dprintf(STDOUT_FILENO, "Error: Can't read from file %s\n", argv[1]);
 	}
 	fd = open(argv[2], O_WRONLY | O_TRUNC);
-	if (fd = -1)
+	if (fd == -1)
 	{
 		fd = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 664);
 		if (fd == -1)
@@ -34,7 +35,7 @@ int main (int argc, char **argv)
 			exit(99);
 			dprintf(STDOUT_FILENO, "Error: Can't write to %s\n", argv[2]);
 		}
-		buffer = malloc(size(char) * 1024);
+		buffer = malloc(sizeof(char) * 1024);
 		if (buffer == 0)
 		{
 			exit(99);
