@@ -40,6 +40,7 @@ int main (int argc, char **argv)
 		{
 			exit(99);
 			dprintf(STDOUT_FILENO, "Error: Can't write to %s\n", argv[2]);
+			free(buffer);
 		}
 		option = write(fd, buffer, fd1);
 		if (option == -1)
@@ -52,6 +53,7 @@ int main (int argc, char **argv)
 	if(option == -1)
 	{
 		exit(100);
-		dprintf(STDOUT_FILENO, "Error: Can't close %zd\n", fd);
+		dprintf(STDOUT_FILENO, "Error: Can't close %d\n", fd);
 	}
+	return(0);
 }
