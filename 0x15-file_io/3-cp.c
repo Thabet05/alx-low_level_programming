@@ -53,7 +53,7 @@ int main (int argc, char **argv)
 	if(option == -1)
 	{
 		exit(100);
-		dprintf(STDOUT_FILENO, "Error: Can't close %d\n", fd);
+		dprintf(STDOUT_FILENO, "Error: Can't close %d\n", (int)fd);
 	}
 	return(0);
 }
