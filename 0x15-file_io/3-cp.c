@@ -7,7 +7,7 @@
  */
 int main (int argc, char **argv)
 {
-	ssize_t file_from, file_to, option,fd, fd1;
+	ssize_t option, fd, fd1;
 
 	if(argc != 3)
 		{
@@ -19,16 +19,16 @@ int main (int argc, char **argv)
 		exit(98);
 		dprintf(STDOUT_FILENO, "Error: Can't read from file %s\n", argv[1]);
 	}
-	fd1 = open(file_from, O_RDONLY);
+	fd1 = open(argv[1], O_RDONLY);
 	if(fd1 == -1)
 	{
 		exit(98);
 		dprintf(STDOUT_FILENO, "Error: Can't read from file %s\n", argv[1]);
 	}
-	fd = open(file_to, O_WRONLY | O_TRUNC);
+	fd = open(argv[2], O_WRONLY | O_TRUNC);
 	if (fd = -1)
 	{
-		option = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 664);
+		option = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 664);
 		if (option == -1)
 		{
 			exit(99);
@@ -45,6 +45,6 @@ int main (int argc, char **argv)
 	if(option == -1)
 	{
 		exit(100);
-		dprintf(STDOUT_FILENO, "rror: Can't close fd\n");
+		dprintf(STDOUT_FILENO, "Error: Can't close %s\n", fd);
 	}
 }
