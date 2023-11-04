@@ -28,13 +28,19 @@ int main (int argc, char **argv)
 	fd = open(argv[2], O_WRONLY | O_TRUNC);
 	if (fd = -1)
 	{
-		option = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 664);
-		if (option == -1)
+		fd = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 664);
+		if (fd == -1)
 		{
 			exit(99);
 			dprintf(STDOUT_FILENO, "Error: Can't write to %s\n", argv[2]);
 		}
-		option = write(fd, content, nmbrbytes);
+		buffer = malloc(size(char) * 1024);
+		if (buffer == 0)
+		{
+			exit(99);
+			dprintf(STDOUT_FILENO, "Error: Can't write to %s\n", argv[2]);
+		}
+		option = write(fd, fd1, buffer);
 		if (option == -1)
 		{
 			exit(99);
@@ -45,6 +51,6 @@ int main (int argc, char **argv)
 	if(option == -1)
 	{
 		exit(100);
-		dprintf(STDOUT_FILENO, "Error: Can't close %s\n", fd);
+		dprintf(STDOUT_FILENO, "Error: Can't close %zd\n", fd);
 	}
 }
