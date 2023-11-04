@@ -7,7 +7,7 @@
  */
 int main (int argc, char **argv)
 {
-	ssize_t file_from, file_to;
+	ssize_t file_from, file_to, option,fd, fd1;
 
 	if(argc != 3)
 		{
